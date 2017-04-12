@@ -1,0 +1,12 @@
+body {
+     background-color: beige ;
+     display: flex;       /* all your children use flexbox */
+     flex-direction: column;
+     min-height: 100vh;   /* body takes up 100% of viewport */
+}
+
+#logo {
+    width: 50%;
+    float: left;  /* float around image, image on left */
+    margin-left: 30px; 
+}
