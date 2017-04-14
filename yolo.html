@@ -2,18 +2,82 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width"> 
 <link rel="stylesheet" type="text/css" href="yolo.css">
 <title>Assignment 2</title>
 </head>
 
 <body>
-<div id="logo">
-<img src="/Users/wathiq/Documents/189_Assignment2/Assets/logo.png" > 
+
+<header>
+	<img src="/Users/wathiq/Documents/189_Assignment2/Assets/logo.png" alt="logo"> 
+	<img src="/Users/wathiq/Documents/189_Assignment2/Assets/menu.png" alt="menu" id="menuIcon">
+</header>
+
+
+<nav>
+<button class="menu">Home</button>
+<button class="menu">News</button>
+<button class="menu">Events</button>
+<button class="menu">Shop</button>
+<button class="menu">Contact</button>
+<input type="text" id="search" name="Search" placeholder="search">
+</nav>
+
+
+<div id="mainContent">
+	<div id = "mission"> 
+		<p> <strong>"Our Mission</strong> is to educate the public, especially our children, about the value of a farm to a table community food system that also teaches us to value the environment"</p>
+	</div>
+
+	<div>
+		<button id="donateButton" class="donate">donate</button>
+	</div>
+
+
+		<p id="yolo">"You Only Live Once - plant vegetables!"</p>
+
+	<div id="shop"> 
+		<div id="season">
+			<p> <strong> This season's seeds </strong></p>
+		</div>
+		<div id="shopBtn">
+		<button id="shopButton" class="shop">shop</button>
+		</div>
+	</div>
 </div>
 
-<div id = "footer">
+<div id = images>
+	<div class = "logos">
+		<img src="/Users/wathiq/Documents/189_Assignment2/Assets/beans.jpg" alt="beans">
+		<p class="label"><strong>Green Bean</strong></p>
+	</div>
+	<div class = "logos">
+		<img src="/Users/wathiq/Documents/189_Assignment2/Assets/carrot.jpg" alt="carrot">
+		<p class="label" class="carrot"><strong>Carrot</strong></p>
+	</div>
+	<div class = "logos">
+		<img src="/Users/wathiq/Documents/189_Assignment2/Assets/pepper.jpg" alt="pepepr">
+		<p class="label"><strong>Bell Pepper</strong></p>
+	</div>
+	<div class = "logos">
+		<img src="/Users/wathiq/Documents/189_Assignment2/Assets/potato.jpg" alt="potato">
+		<p class="label"><strong>Potato</strong></p>
+	</div>
+	<div class = "logos">
+		<img src="/Users/wathiq/Documents/189_Assignment2/Assets/squash.jpg" alt="squash">
+		<p class="label"><strong>Zucchini</strong></p>
+	</div>
+	<div class = "logos">
+		<img src="/Users/wathiq/Documents/189_Assignment2/Assets/tomato.jpg" alt="tomato">
+		<p class="label"><strong>Tomato</strong></p>
+	</div>
+</div>
+
+<div class = "bottomButton" id="bottomShop">
+	<button class="shop">shop</button>
+</div>
+
 <footer>&copy; 2016 Yolo Farm to Fork</footer>
-</div>
-
 </body>
 </html>

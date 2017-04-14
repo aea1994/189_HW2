@@ -1,18 +1,203 @@
 body{
-     background-color: beige ;
+	 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     background-color: #F7EED8;
      display: flex;       /* all your children use flexbox */
      flex-direction: column;
      min-height: 100vh;   /* body takes up 100% of viewport */
 }
 
-#logo{
-    width: 50%;
-    float: left;  /* float around image, image on left */
-    margin-left: 30px; 
+header{
+    /*position: fixed;*/
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
 }
 
-#footer{
-	background-color: #006400;
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    padding-right: 90px;
+    padding-left: 90px; 
+}
+
+
+#menuIcon { 
+    width: 30px;
+    display: none;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: #90A951;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#search{
+    border-radius: 15px;
+}
+
+#mission{
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    color: #5A4621;
+/*    background-color: beige;
+*/
+}
+
+#yolo{
+    font-family: Snell Roundhand, cursive;
+     font-size: 24px;
+     text-align: center;
+     color: #A39576;
+     padding: 20px;
+
+}
+
+#shop{
+    color: #5A4621;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+	background-color: darkgreen;
 	text-align: center;
 	padding: 10px;
+    margin-right: : 10px;
 }
+
+
+
+button.menu {
+    background-color: #90A951;
+    padding: 10px;
+    padding-right: 100px;
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    border: #90A951 ;
+
+}
+
+button.donate{
+    background-color: darkgreen;
+    margin: 0px;
+    padding: 10px;
+    font-size: medium;
+    color: white;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px; /* Gives button round edges*/
+}
+
+button.shop{
+    background-color: darkgreen;
+    margin: 5px;
+    padding: 10px;
+    font-size: medium;
+    color: white;
+/*    flex-grow: 1;     overrides height spec! 
+*/    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px;
+}
+
+#shopBtn{
+    float: right
+}
+
+#donateButton{
+    float: right;
+}
+
+.bottomButton{
+    display: none;
+}
+
+
+
+@media (max-width: 480px) {
+    #menuIcon {
+        display: flex;
+        height: 40px;
+        width: 50px;
+        right: 0px;
+        padding: 20px
+    }
+    #mission{
+        display: none;
+        text-align: center;
+
+    }
+    #donateButton{
+        display: none;
+    }
+
+    #yolo{
+        display: none;
+    }
+    #shopButton{
+        display: none;
+    }
+    #season{
+    background-color: #90A951;
+    display: flex;
+    flex-direction: row;
+    }
+    .bottomButton{
+    display: flex;
+    justify-content: center;
+
+    }
+   
+    nav {
+        display: none;
+    }
+}
+
+
+
+
+#images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.label{
+   margin-top: 0px;
+   font-size: 16px;
+   size: 20px;
+
+}
+
+.logos{
+    text-align: center;
+    margin: 25px;
+    margin-bottom: 0px;
+}
+
+.label{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    size: 20px;
+}
+
+.menu:hover{
+    background-color: #F7EED8;
+}
+
+
+
